@@ -1,0 +1,56 @@
+﻿/*----------------------------------------*/
+/* Menu default CSS
+/*----------------------------------------*/
+  .meny{             /*Общий блок*/
+	background: #fdeaa8;     /*Фон общего блока*/
+	padding: 5px;     /*Отступ от пунктов меню*/
+	border-radius: 5px;     /*Закруглённые углы*/
+	box-shadow: 0px 0px 0px 2px #0ea8f4;     /*Рамка общего блока*/
+	}
+ ul {             /*Пункты меню*/
+	width: 190px;     /*Ширина пунктов подменю*/
+	list-style: none;     /*Убираем маркеры*/
+	padding: 0;     /*Поля вокруг текста*/
+	margin: 0 0 0 0;     /*Отступы вокруг подменю*/
+	font-family: Arial, sans-serif;     /*Шрифт текста в меню*/
+	font-size: 16px;     /*Размер текста в меню*/
+	text-align: center;     /*Текст по центру*/
+	}
+ li ul {             /*Размещаем подменю*/
+	position: absolute;     /*Подменю позиционируются абсолютно*/
+	display: none;     /*Скрываем подменю*/
+	margin-left: 190px;     /*Сдвиг подменю вправо или влево*/
+	margin-top: -30px;     /*Сдвиг подменю вверх или вниз*/
+	}
+  li a {              /*Ссылка в подменю*/ 
+	display: block;     /*Ссылка*/
+	padding: 5px;     /*Поля вокруг текста*/     
+	margin-bottom: 5px;
+	text-decoration: none;     /*Убираем подчеркивание*/
+	color: #666;     /*Цвет текста*/
+	border-radius: 5px;    /*Закруглённые углы пунктов меню*/
+	box-shadow: 0px 0px 0px 2px #0ea8f4;     /*Рамка пунктов меню*/
+	background: #7df9ff;     /*Фон для старых браузеров*/
+	background: -moz-radial-gradient(center, ellipse cover, #7df9ff 50%, #FBFFFF);     /*Переходящий фон (градиент) пунктов меню*/
+		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(50%,#7df9ff), color-stop(100%,#FBFFFF)); 
+			background: -webkit-radial-gradient(center, ellipse cover, #7df9ff 50%, #FBFFFF);
+				background: -o-radial-gradient(center, ellipse cover, #7df9ff 50%, #FBFFFF);
+					background: -ms-radial-gradient(center, ellipse cover, #7df9ff 50%, #FBFFFF);
+	}
+   li a:hover {         /*Ссылки подменю при наведении курсора*/
+	color: #ffe;     /*Цвет текста при наведении*/
+	box-shadow: 0px 0px 5px 2px #0ea8f4; /*Рамка при наведении*/
+	background: #009494;     /*Фон при наведении*/
+	background: -moz-radial-gradient(center, ellipse cover, #009494, #FBFFFF);     /*Градиент при наведении*/
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#009494), color-stop(100%,#FBFFFF)); 
+		background: -webkit-radial-gradient(center, ellipse cover, #009494, #FBFFFF);
+			background: -o-radial-gradient(center, ellipse cover, #009494, #FBFFFF);
+				background: -ms-radial-gradient(center, ellipse cover, #009494, #FBFFFF);
+	}
+   li a:active{        /*При нажатии */
+	color: #ef7a04;
+	box-shadow: 0px 0px 15px 5px #0ea8f4;
+	}
+   li:hover ul {         /*Подменю при наведении курсора*/
+	display: block;     /*Подменю отображается при наведении курсора*/
+   }
